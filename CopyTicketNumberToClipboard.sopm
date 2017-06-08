@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <!-- GENERATED WITH OTRS::OPM::Maker::Command::sopm (1.37) -->
+    <Name>CopyTicketNumberToClipboard</Name>
+    <Version>5.0.1</Version>
+    <Framework>4.0.x</Framework>
+    <Framework>5.0.x</Framework>
+    <Vendor>Perl-Services.de</Vendor>
+    <URL>http://www.perl-services.de</URL>
+    <Description Lang="de">Fügt ein Icon zum Kopieren der Ticketnummer in die Zwischenablage ein</Description>
+    <Description Lang="en">Adds an icon to copy the ticket number to the clipboard</Description>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/CopyTicketNumberToClipboard.xml" />
+        <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/CopyTicketNumberToClipboard.pm" />
+        <File Permission="644" Location="doc/CopyTicketNumberToClipboard.json" />
+    </Filelist>
+</otrs_package>
