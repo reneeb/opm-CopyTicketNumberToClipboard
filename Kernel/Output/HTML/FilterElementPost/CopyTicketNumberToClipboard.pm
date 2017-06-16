@@ -76,10 +76,11 @@ sub _BuildHTML {
     );
 
     my $HTMLTemplate = q~
-        <i class="fa fa-clipboard" id="CopyTicketNumberIcon"
+        <i class="fa fa-clipboard pointer" id="CopyTicketNumberIcon"
              onclick="copyToClipboard('[% Data.Value | html %]');"></i>
         <script type="text/javascript">//<![CDATA[
              function copyToClipboard(text) {
+                $('#CopyTicketNumberIcon').addClass('pulsing');
                 if (window.clipboardData) { // Internet Explorer
                     window.clipboardData.setData("Text", text);
                 } else {  
@@ -103,6 +104,8 @@ sub _BuildHTML {
                       //console.log('Oops, unable to copy');
                     }
                 }
+
+                window.setTimeout( function() { $('#CopyTicketNumberIcon').removeClass('pulsing'); }, 3000 );
             }
         //]]></script>
     ~;

@@ -24,4 +24,14 @@
             <String Regex=""> [[% Config("Ticket::Hook") %][% Config("Ticket::HookDivider") %][% Data.TicketNumber %]]</String>
         </Setting>
     </ConfigItem>
+    <ConfigItem Name="Loader::Agent::CommonCSS###001-CopyTicketNumber" Required="1" Valid="1">
+        <Description Translatable="1">List of CSS files to always be loaded for the agent interface.</Description>
+        <Group>CopyTicketNumberToClipboard</Group>
+        <SubGroup>Core::Web</SubGroup>
+        <Setting>
+            <Array>
+                <Item>PS.CopyTicketNumberToClipboard.css</Item>
+            </Array>
+        </Setting>
+    </ConfigItem>
 </otrs_config>
