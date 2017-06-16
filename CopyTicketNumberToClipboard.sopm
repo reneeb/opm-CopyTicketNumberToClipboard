@@ -2,7 +2,7 @@
 <otrs_package version="1.0">
     <!-- GENERATED WITH OTRS::OPM::Maker::Command::sopm (1.37) -->
     <Name>CopyTicketNumberToClipboard</Name>
-    <Version>5.0.3</Version>
+    <Version>5.0.4</Version>
     <Framework>4.0.x</Framework>
     <Framework>5.0.x</Framework>
     <Vendor>Perl-Services.de</Vendor>
@@ -14,5 +14,6 @@
         <File Permission="644" Location="Kernel/Config/Files/CopyTicketNumberToClipboard.xml" />
         <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/CopyTicketNumberToClipboard.pm" />
         <File Permission="644" Location="doc/CopyTicketNumberToClipboard.json" />
+        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/default/css/PS.CopyTicketNumberToClipboard.css" />
     </Filelist>
 </otrs_package>
