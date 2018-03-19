@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2017 Perl-Services.de, http://www.perl-services.de/
+# Copyright (C) 2017 - 2018 Perl-Services.de, http://www.perl-services.de/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -46,7 +46,7 @@ sub Run {
     my $Template = $ConfigObject->Get('CopyTicketNumberToClipboard::Template');
 
     ${ $Param{Data} } =~ s{
-        <div \s+ class="Headline"> \s+
+        <div \s+ class="Headline[^"]*"> \s+
             <div \s+class="Flag" .*?
                 <h1 [^>]*> \s+ \K (.*) \s+ ((?:<span>)?&mdash;(?:</span>)?)
     }{$1 . $Self->_BuildHTML(Template => $Template, Tn => $1) . $2 }xsme;
