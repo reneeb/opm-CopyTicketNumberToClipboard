@@ -1,11 +1,14 @@
 {
     "name": "CopyTicketNumberToClipboard",
-    "version": "6.0.2",
+    "version": "6.0.3",
     "framework": [
         "6.0.x",
         "6.1.x",
         "6.2.x",
-        "6.3.x"
+        "6.3.x",
+        "6.4.x",
+        "6.5.x",
+        "7.0.x"
     ],
     "vendor": {
         "name": "Perl-Services.de",
@@ -15,5 +18,8 @@
     "description" : {
         "en": "Adds an icon to copy the ticket number to the clipboard",
         "de": "Fügt ein Icon zum Kopieren der Ticketnummer in die Zwischenablage ein"
-    }
+    },
+    "exclude_files" : [
+        "doc/CopyTicketNumberToClipboard.json"
+    ]
 }
